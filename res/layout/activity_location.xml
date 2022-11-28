@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:contentDescription="@string/setting"
+    android:orientation="vertical"
+    android:padding="10dip" >
+            
+    <LinearLayout
+        android:id="@+id/lineartoplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/toogleShowHide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_toggle"
+                android:textColor="@android:color/white"
+                android:textOff=""
+                android:textOn="" />
+
+            <ImageButton
+                android:id="@+id/imgBtnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_thresh_selection"
+                android:contentDescription="@string/ic_camera"
+                android:src="@drawable/btn_thresh_selection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTimeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_time_title" />
+
+            <TextView
+                android:id="@+id/txtTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_time_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/red"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtDist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/location_distance_title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtDistValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/location_distance_text"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/txtSpeed"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtSprintValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/location_sprints_text"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>  
+
+  </LinearLayout>
+  
+<ViewFlipper
+    android:id="@+id/view_flipper"
+    android:layout_below="@id/lineartoplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp" >
+
+    <LinearLayout
+        android:id="@+id/googleMapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            />
+<!--             class="com.google.android.gms.maps.MapFragment" /> -->
+
+    </LinearLayout>
+    
+     <LinearLayout
+         android:id="@+id/heatmapLayout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center_vertical"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:id="@+id/heat_map_view"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/border"
+             android:src="@drawable/img_football_field" />
+                   
+    </LinearLayout>
+</ViewFlipper>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="2dp" >
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnStopTracking"
+            style="@drawable/default_button_stop"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_stop_selection"
+            android:text="@string/location_stop_button_text"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleBtnStart"
+            style="@drawable/default_button_start"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_start_selection"
+            android:text="@string/location_toggle_btn_label"
+            android:textOff="@string/location_toggle_btn_off"
+            android:textOn="@string/location_toggle_btn_on"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

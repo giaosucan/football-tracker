@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ android:padding="3dip"
+ android:background="@color/white"
+>
+
+    <ImageView
+        android:id="@+id/imgSprintType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: " />
+
+    <TextView
+        android:id="@+id/sprintDistancetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView1"
+        android:text="@string/itemDistance"
+        android:textColor="#F00000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/durationitemtext"
+        android:text="Duration: " />
+
+    <TextView
+        android:id="@+id/durationitemtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#F00000"
+        android:text=" 20 second" />
+    
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_help_available">
+      There is no help available at this time.
+    </string>
+    <string name="about_help_topics">
+      Help is available for each section of this app.
+    </string>
+
+    <string name="help_page_intro">For information on the different parts of this app, touch one of the images below.</string>
+    <string name="help_page_intro_html">
+    <![CDATA[
+      For information on the different parts of this app, touch one of the images below:
+       ]]>
+    </string>
+
+    <string name="help_title_section1">About</string>
+    <string name="help_text_section1">
+    This is the introduction of this application
+    </string>
+    <string name="help_topic_about">
+    <![CDATA[
+      <p>
+        <b style="color:#000">
+        	<p> <b style="color:#00FF"> Athlete Tracker Version 1.5.5 </b> </p>
+	 		Athlete Tracker is an app which athlete can attach a phone to their body
+		    and via GPS, track the location of the athlete, the distance they have run, 
+		    the number of sprints above certain thresholds  
+	    </b>
+      </p>
+      <p>
+      	<b style="color:#000">
+	         Application can show where player during the game, the run he made,
+	         the sprints he made and essential "map" the movement of the player during
+	         the game. Therefore, the player or coach can analyse where the player spent
+	         most of his time, where he produced sprints
+	     </b>
+      </p>    
+      <p>     
+      </p>
+      <p><b>Return to the previous screen by touching the Back button.</b>
+        </p>
+      ]]>
+    </string>
+
+    <string name="help_title_section2">Required</string>
+    <string name="help_text_section2">
+     Hardware required to use this application
+    </string>
+    <string name="help_topic_require">
+    <![CDATA[
+      <p>
+        This app required device must have GPS service and Internet connection
+      </p>
+      <p> 
+       For Athlete Tracker to correctly track your progress, you need to be outdoors.
+       The accuracy of this app base on the accuracy of GPS device.
+      </p>
+      <p><b>Return to the previous screen by touching the Back button.</b>
+        </p>
+       ]]>
+    </string>
+
+
+    <string name="help_title_section3">Guides</string>
+    <string name="help_text_section3">
+     Show you step-by-steps instruction to use this app
+    </string>
+    <string name="help_topic_guide">
+    <![CDATA[
+     
+	 <p> 
+      Enable <strong>GPS</strong> setting before starting application. </p>
+	<p>Click <strong>Setting</strong> icon to adjust the <strong>Threshold</strong>. There are 4 Thresholds you can adjust</p>
+	<p>Click Menu icon on Action bar to select various function of this app. </p>
+	      <p> 
+	      Click <strong>Start</strong> button on main screen to start tracking. Application will display the &quot;heat map&quot; of the player, the runs and the sprints which player has made</p>
+	      <p>Click <strong>Pause</strong> button to pause tracking. </p>
+	      <p>Click <strong>Stop</strong> button to stop tracking. </p>      
+	       <p> 
+	       After finish the tracking, the player information could be shared on Facebook
+	       or upload to server.</p>
+	      <p><b>Return to the previous screen by touching the Back button.</b>
+	</p>
+       ]]>
+    </string>
+
+    <string name="help_title_section4">Contacts</string>
+    <string name="help_text_section4">
+      Contact me
+    </string>
+    <string name="help_topic_contact">
+    <![CDATA[
+      <p>
+     	Contact to developer
+      </p>
+      <p> 
+        If you have any question, please contact me via email
+        <a href="tracker.support@raditel.net">tracker.support@raditel.net</a>. 
+        Your ideas help me to create the better application
+      </p>
+      <p> 
+      </p>
+      <p><b>Return to the previous screen by touching the Back button.</b>
+        </p>
+       ]]>
+    </string>
+
+</resources>
